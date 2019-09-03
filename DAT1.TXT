@@ -1,0 +1,92 @@
+Testing
+Requirements / Assumptions used
+input data must contain two integers(specifying margins) and a text file
+the ouput must not cross the margins
+1 blank in between words and 2 blanks between sentences
+first line must start at the left margin
+
+longest input line is 80 characters
+the margin integers are for character spaces
+keep the same format and linebreaks as original text
+
+Algorithm (pseudo code)
+read two integers that determine the margins
+80 minus the two margins determines the space for the text
+each line will be indented as far as the left margin
+read the text file line by line
+if the character count is larger than the text space midword
+  then the word is moved to the next line and a new count is started
+
+Source code
+assn.py
+
+
+Test cases used with results
+TEST1.TXT with margins 6, 6
+      “You take a drink with your friends, and somebody says, ‘Yeah,
+      we should go skydiving tomorrow!” You go, ‘Yeah, we’ll go
+      skydiving tomorrow!’ ‘Yeah! Yeah!’ Everybody goes, ‘Yeah!’
+      Then that night, you’re laying in your bed and you just keep,
+      ‘Uh, uh.’ You’re terrified. You keep imagining over and over
+      again jumping out of an airplane, and you can’t figure out why you
+      would do that. You wake up the next day, and you go down you said
+      you were going to meet, and everybody’s there. You get in the van
+      and be like, ‘Oh my God. Oh my God.’ Your stomach is terrible.
+      You can’t eat and everything, but you don’t want to be the only
+      punk who doesn’t jump out of this airplane. You fly, and you go
+      up, you go up, you go up, and you go up to 14,000 feet.
+
+      “Somebody opens the door, and in that moment, you realize you’ve
+      never been in a freaking airplane with the door open. You’re
+      looking out down to death. They say, ‘On three,’ and they say,
+      ‘One, two,’ and he pushes you on two because people grab on
+      three. You go, ‘Ahhh.’ You fall out of the airplane. In one
+      second, you realize that it’s the most blissful experience of your
+      life. You’re flying. There’s zero fear. You realize at the point
+      of maximum danger is the point of minimum fear. It’s bliss. Why
+      were you scared in your bed the night before? What do you need that
+      fear for? Everything up to the stepping point, there’s actually no
+      reason to be scared. It only just ruins your day. The best things in
+      life are on the other side of terror, on the other side of your
+      maximum fear, are all of the best things in life.”
+
+Insert left margin: 30
+Insert right margin: 52
+Margins are too small.
+
+TEST2.TXT with margins 20, 20
+                    She lives in my thoughts and then she
+                    visits in my dreams so I see her at
+                    night and then I see her again during
+                    the day and whether or not she
+                    physically passes my way, the day that
+                    we met begins to play and rewinds in my
+                    mind at least one time every thirty
+                    minutes.
+                    That’s like 48 times a day.
+                    That’s like 336 times a week, and she
+                    makes me weak in my knees and I can
+                    hardly speak like that old tune song
+                    As I stand here like a deer in the
+                    headlights of her beauty as she dances
+                    on my ideas
+                    and before she sleeps it’s like she
+                    wraps herself in my memories
+                    and she sets the needs of my soul with
+                    the melodies of her voice,
+                    She was the first girl to make my palms
+                    moist just by walking next to her.
+                    And even though her beauty consumes me I
+                    sit back wondering whether or not I
+                    should actually pursue her.
+
+                    And I know what you’re thinking:
+                    I’m just some love-sick fool
+                    but tell me what would you do if you saw
+                    the most beautiful flower?
+                    I mean even if you don’t like flowers,
+                    but you just saw this one flower that
+                    took your breath away
+                    I mean a flower so beautiful that even
+                    the hardest of thugs stopped to say
+                    “yo, that flower’s kinda nice”
